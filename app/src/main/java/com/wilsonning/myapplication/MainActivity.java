@@ -6,14 +6,17 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
+    //元件宣告
+    TextView tv;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-    // Example of a call to a native method
-    TextView tv = (TextView) findViewById(R.id.sample_text);
-    tv.setText(stringFromJNI());
+        tv = (TextView) findViewById(R.id.sample_text);
+        //連結元件
+        tv.setText(stringFromJNI());
+        // Example of a call to a native method
     }
 
     /**
