@@ -6,8 +6,9 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
-    //元件宣告
     TextView tv;
+    //元件宣告
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
